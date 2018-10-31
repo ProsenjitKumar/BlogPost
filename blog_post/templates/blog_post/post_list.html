@@ -1,0 +1,16 @@
+{% extends 'base_home.html' %}
+{% block title %}
+    <title>Home</title>
+{% endblock %}
+
+{% block content %}
+
+    {% for object in object_list %}
+    <div>
+        <p><h2><a href="{% url 'blog_post:post_detail' object.pk object.slug %}">{{ object.title }}</a> </h2></p>
+        <p>{{ object.post_date }}</p>
+    </div><br>
+    {% endfor %}
+
+{% endblock %}
+

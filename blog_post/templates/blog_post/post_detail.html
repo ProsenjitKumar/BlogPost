@@ -1,0 +1,17 @@
+{% extends 'base_home.html' %}
+{% block title %}
+    <title>Post Details</title>
+{% endblock %}
+
+
+{% block content %}
+
+
+<div>
+    <p><h2>{{ object.title }}</h2></p>
+    <p>{{ object.post_date }}</p>
+    <p>{{ object.content }}</p>
+</div><br>
+
+
+{% endblock %}

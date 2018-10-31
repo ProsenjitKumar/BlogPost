@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+
+    {% endblock %}
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<header>
+    <div class="topnav">
+      <a class="active" href="{% url 'blog_post:home' %}">Home</a>
+    </div>
+</header>
+
+{% block content %}
+
+{% endblock %}
+
+</body>
+</html>
